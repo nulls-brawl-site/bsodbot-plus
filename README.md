@@ -72,7 +72,7 @@ Whether you want to run a local terminal assistant, a long-running Telegram/Disc
 
 ---
 
-## ✨ Key Features
+## <img src="./images/features_icon.svg" width="32" align="center" /> Key Features
 
 - 🚀 **Blazing Fast & Lightweight**: Minimal memory footprint, optimized for low-resource environments.
 - 🧠 **Persistent Memory & Context**: Advanced two-stage memory system (Dream) that automatically summarizes and retains key facts across restarts.
@@ -83,7 +83,7 @@ Whether you want to run a local terminal assistant, a long-running Telegram/Disc
 
 ---
 
-## 🛠️ Quick Start
+## <img src="./images/quickstart_icon.svg" width="32" align="center" /> Quick Start
 
 ### 1. Installation
 
@@ -125,7 +125,7 @@ python3 -m nanobot
 
 ---
 
-## 📂 Project Structure
+## <img src="./images/structure_icon.svg" width="32" align="center" /> Project Structure
 
 ```text
 ├── nanobot/               # Core agent runtime and loop

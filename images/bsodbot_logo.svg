@@ -52,7 +52,7 @@
   <path d="M 0,100 L 800,100 M 0,200 L 800,200 M 0,300 L 800,300 M 200,0 L 200,400 M 400,0 L 400,400 M 600,0 L 600,400" stroke="#12122b" stroke-width="1" />
 
   <!-- Cybernetic Cat / Robot Head Icon -->
-  <g transform="translate(100, 80)">
+  <g transform="translate(80, 80)">
     <!-- Outer Hexagon Shield -->
     <polygon points="120,10 220,60 220,180 120,230 20,180 20,60" fill="none" stroke="url(#cyan-glow)" stroke-width="3" filter="url(#glow-cyan)" />
     
@@ -75,27 +75,24 @@
   </g>
 
   <!-- Glowing Lightning Bolt (Overlapping the logo) -->
-  <g transform="translate(260, 100)" filter="url(#glow-purple)">
+  <g transform="translate(240, 100)" filter="url(#glow-purple)">
     <path d="M 40,10 L -10,110 L 25,110 L 5,210 L 75,90 L 30,90 Z" fill="url(#lightning-grad)" />
   </g>
 
   <!-- Typography -->
-  <g transform="translate(360, 180)">
-    <!-- BSODBOT -->
-    <text x="0" y="0" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-weight="900" font-size="64" fill="#ffffff" letter-spacing="4">
-      BSODBOT
-    </text>
-    <!-- PLUS -->
-    <text x="315" y="0" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-weight="900" font-size="64" fill="url(#lightning-grad)" letter-spacing="4" filter="url(#glow-purple)">
-      PLUS
+  <g transform="translate(330, 180)">
+    <!-- BSODBOT PLUS (Single text element with tspan to prevent overflow) -->
+    <text font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-weight="900" font-size="54" letter-spacing="3">
+      <tspan fill="#ffffff">BSODBOT</tspan>
+      <tspan fill="url(#lightning-grad)" filter="url(#glow-purple)"> PLUS</tspan>
     </text>
     <!-- Subtitle -->
-    <text x="5" y="45" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-weight="600" font-size="18" fill="#00f2fe" letter-spacing="6" opacity="0.9" filter="url(#glow-cyan)">
+    <text x="5" y="45" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-weight="600" font-size="16" fill="#00f2fe" letter-spacing="5" opacity="0.9" filter="url(#glow-cyan)">
       NEXT-GEN AI AGENT GATEWAY
     </text>
     <!-- Small Tech Badge -->
-    <rect x="5" y="70" width="140" height="24" rx="12" fill="#1e1e3f" stroke="#7000ff" stroke-width="1" />
-    <text x="20" y="87" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-weight="700" font-size="11" fill="#ff007f" letter-spacing="2">
+    <rect x="5" y="65" width="140" height="24" rx="12" fill="#1e1e3f" stroke="#7000ff" stroke-width="1" />
+    <text x="20" y="81" font-family="'Segoe UI', -apple-system, Roboto, sans-serif" font-weight="700" font-size="11" fill="#ff007f" letter-spacing="2">
       v2.0.0-HYBRID
     </text>
   </g>
