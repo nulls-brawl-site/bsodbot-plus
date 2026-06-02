@@ -3,62 +3,61 @@
 @tailwind utilities;
 
 /* Design tokens — HSL form, sourced from shadcn/ui's "neutral" palette. */
-@layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 3% 12%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 3% 12%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 3% 12%;
-    --primary: 240 4% 16%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
-    --radius: 0.4375rem;
-    --sidebar: 0 0% 98.5%;
-    --sidebar-foreground: 0 0% 3.9%;
-    --sidebar-accent: 0 0% 95.8%;
-    --sidebar-accent-foreground: 0 0% 9%;
-    --sidebar-border: 0 0% 89.8%;
+    --background: 250 24% 95%; /* MD3 Light Surface Container Low */
+    --foreground: 250 12% 10%; /* MD3 Light On Surface */
+    --card: 250 20% 98%; /* MD3 Light Surface */
+    --card-foreground: 250 12% 10%;
+    --popover: 250 20% 98%;
+    --popover-foreground: 250 12% 10%;
+    --primary: 262 52% 47%; /* MD3 Light Primary (Deep Purple) */
+    --primary-foreground: 0 0% 100%; /* MD3 Light On Primary */
+    --secondary: 262 16% 90%; /* MD3 Light Secondary Container */
+    --secondary-foreground: 262 32% 20%; /* MD3 Light On Secondary Container */
+    --muted: 250 10% 92%;
+    --muted-foreground: 250 8% 40%;
+    --accent: 262 52% 94%; /* MD3 Light Primary Container */
+    --accent-foreground: 262 52% 20%; /* MD3 Light On Primary Container */
+    --destructive: 0 75% 42%; /* MD3 Light Error */
+    --destructive-foreground: 0 0% 100%;
+    --border: 250 10% 85%;
+    --input: 250 10% 85%;
+    --ring: 262 52% 47%;
+    --radius: 1.25rem; /* MD3 Rounded Corners (Extra Large) */
+    --sidebar: 250 24% 92%; /* MD3 Light Surface Container */
+    --sidebar-foreground: 250 12% 10%;
+    --sidebar-accent: 262 52% 90%;
+    --sidebar-accent-foreground: 262 52% 20%;
+    --sidebar-border: 250 10% 85%;
   }
 
   .dark {
-    --background: 0 0% 10%;
-    --foreground: 240 4% 96%;
-    --card: 0 0% 12%;
-    --card-foreground: 240 4% 96%;
-    --popover: 0 0% 12%;
-    --popover-foreground: 240 4% 96%;
-    --primary: 240 5% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 13%;
-    --muted-foreground: 0 0% 60%;
-    --accent: 0 0% 15%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
-    --ring: 0 0% 83.1%;
-    --sidebar: 0 0% 11.5%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-accent: 0 0% 15.5%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 0 0% 18%;
+    --background: 250 14% 8%; /* MD3 Dark Surface Container Lowest */
+    --foreground: 250 12% 90%; /* MD3 Dark On Surface */
+    --card: 250 10% 12%; /* MD3 Dark Surface */
+    --card-foreground: 250 12% 90%;
+    --popover: 250 10% 12%;
+    --popover-foreground: 250 12% 90%;
+    --primary: 262 80% 74%; /* MD3 Dark Primary (Light Purple) */
+    --primary-foreground: 262 52% 15%; /* MD3 Dark On Primary */
+    --secondary: 262 20% 18%; /* MD3 Dark Secondary Container */
+    --secondary-foreground: 262 40% 85%; /* MD3 Dark On Secondary Container */
+    --muted: 250 10% 15%;
+    --muted-foreground: 250 8% 65%;
+    --accent: 262 50% 22%; /* MD3 Dark Primary Container */
+    --accent-foreground: 262 80% 90%; /* MD3 Dark On Primary Container */
+    --destructive: 0 85% 75%; /* MD3 Dark Error */
+    --destructive-foreground: 0 10% 10%;
+    --border: 250 10% 20%;
+    --input: 250 10% 20%;
+    --ring: 262 80% 74%;
+    --radius: 1.25rem; /* MD3 Rounded Corners (Extra Large) */
+    --sidebar: 250 14% 11%; /* MD3 Dark Surface Container */
+    --sidebar-foreground: 250 12% 90%;
+    --sidebar-accent: 262 50% 20%;
+    --sidebar-accent-foreground: 262 80% 90%;
+    --sidebar-border: 250 10% 20%;
   }
-}
 
 @layer base {
   * {

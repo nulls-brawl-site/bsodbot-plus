@@ -72,11 +72,11 @@ export function Sidebar(props: SidebarProps) {
     <nav
       ref={props.containActionMenus ? setMenuPortalContainer : undefined}
       aria-label={t("sidebar.navigation")}
-      className="flex h-full w-full min-w-0 flex-col border-r border-sidebar-border/60 bg-sidebar text-sidebar-foreground"
+      className="flex h-full w-full min-w-0 flex-col border-r border-sidebar-border/40 bg-sidebar text-sidebar-foreground"
     >
       <div
         className={cn(
-          "flex items-center px-3 pb-2.5 pt-3",
+          "flex items-center px-4 pb-3 pt-4",
           collapsed ? "w-14 justify-start" : "justify-between",
         )}
       >
@@ -88,21 +88,16 @@ export function Sidebar(props: SidebarProps) {
           onClick={collapsed ? props.onExpand : undefined}
           tabIndex={collapsed ? 0 : -1}
           className={cn(
-            "flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-xl transition-colors",
+            "flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full transition-all active:scale-95 hover:bg-sidebar-accent/50",
             collapsed
-              ? "-ml-0.5 hover:bg-sidebar-accent/75"
+              ? "-ml-0.5"
               : "pointer-events-none -ml-0.5",
           )}
         >
           <img
             src="/brand/nanobot_icon.png"
             alt=""
-            className="h-8 w-8 select-none object-contain"
-            draggable={false}
-          />
-        </button>
-        {!collapsed && (
-          <Button
+            className="h-9 w-9 select-none object-contain rounded-full"
             variant="ghost"
             size="icon"
             aria-label={t("sidebar.collapse")}

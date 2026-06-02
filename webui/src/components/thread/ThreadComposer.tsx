@@ -1511,9 +1511,9 @@ function CliAppMentionPalette({
       aria-label={t("thread.composer.mentions.ariaLabel")}
       style={{ maxHeight: layout.maxHeight }}
       className={cn(
-        "absolute left-1/2 z-30 w-[calc(100%-0.5rem)] -translate-x-1/2 overflow-hidden rounded-[22px] border",
+        "absolute left-1/2 z-30 w-[calc(100%-0.5rem)] -translate-x-1/2 overflow-hidden rounded-[28px] border",
         layout.placement === "above" ? "bottom-full mb-2" : "top-full mt-2",
-        "border-border/70 bg-popover p-2 text-popover-foreground shadow-[0_20px_60px_rgba(15,23,42,0.12)]",
+        "border-border/70 bg-popover p-3 text-popover-foreground shadow-[0_20px_60px_rgba(15,23,42,0.12)]",
         "dark:border-white/10 dark:shadow-[0_24px_60px_rgba(0,0,0,0.42)]",
         isHero ? "max-w-[58rem]" : "max-w-[49.5rem]",
       )}
@@ -1645,9 +1645,9 @@ function SlashCommandPalette({
       aria-label={t("thread.composer.slash.ariaLabel")}
       style={{ maxHeight: layout.maxHeight }}
       className={cn(
-        "absolute left-1/2 z-30 w-[calc(100%-0.5rem)] -translate-x-1/2 overflow-hidden rounded-[18px] border",
+        "absolute left-1/2 z-30 w-[calc(100%-0.5rem)] -translate-x-1/2 overflow-hidden rounded-[28px] border",
         layout.placement === "above" ? "bottom-full mb-2" : "top-full mt-2",
-        "border-border/65 bg-popover p-1.5 text-popover-foreground shadow-[0_18px_55px_rgba(15,23,42,0.16)]",
+        "border-border/65 bg-popover p-2 text-popover-foreground shadow-[0_18px_55px_rgba(15,23,42,0.16)]",
         "dark:border-white/10 dark:shadow-[0_22px_55px_rgba(0,0,0,0.45)]",
         isHero ? "max-w-[58rem]" : "max-w-[49.5rem]",
       )}
